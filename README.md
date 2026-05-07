@@ -12,7 +12,7 @@ Dataset link: https://data.mendeley.com/datasets/g46dvrcvwn/2
 <br />
 <br />
 
-# 🌿 TurmericGuard: Self-Supervised Plant Disease Classification
+# 🌿 Turmeric plant: Self-Supervised Plant Disease Classification
 
 ## BYOL (ViT‑B/16) + DINO (Swin‑T) for Turmeric Disease Detection
 
@@ -139,7 +139,7 @@ Cross‑entropy between student’s sharpened probabilities and teacher’s cent
 
 ## 📁 Project Structure
 
-TurmericGuard/
+Turmeric plant/
 │
 ├── notebooks/ # Jupyter notebooks (provided)
 │ ├── BYOL_ViT_B_16.ipynb
@@ -172,33 +172,6 @@ text
 - Python 3.10+
 - CUDA GPU (recommended – 12GB+ VRAM for DINO with batch size 16)
 - Kaggle account (optional, for easy setup)
-
-### Setup
-
-```bash
-# Clone the repository
-git clone https://github.com/yourusername/TurmericGuard.git
-cd TurmericGuard
-
-# Create a virtual environment
-python -m venv venv
-source venv/bin/activate   # On Windows: venv\Scripts\activate
-
-# Install dependencies
-pip install -r requirements.txt
-requirements.txt (minimal version):
-
-text
-torch>=2.0.0
-torchvision>=0.15.0
-timm>=0.9.0
-numpy>=1.24.0
-matplotlib>=3.7.0
-scikit-learn>=1.3.0
-seaborn>=0.12.0
-tqdm>=4.65.0
-Pillow>=9.5.0
-For Kaggle, simply upload the notebooks and add the dataset from /kaggle/input/cse475-groupd-dataset2/ (or your own path). No local installation required.
 
 🚀 Usage Guide
 1. Prepare the Dataset
