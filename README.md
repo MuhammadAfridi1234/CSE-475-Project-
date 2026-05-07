@@ -130,48 +130,23 @@ Cross‑entropy between student’s sharpened probabilities and teacher’s cent
 
 ## 📁 Project Structure
 
-TurmericPlant/
-│
-├── notebooks/ # Main Jupyter notebooks
-
-│ ├── BYOL_ViT_B_16.ipynb # BYOL with pretrained ViT‑B/16
-│ └── DINO_Swin_T.ipynb # DINO with Swin‑T (trained from scratch)
-│
-├── data/ # Dataset directory (created automatically)
-│ ├── raw/ # Original downloaded ZIP from Mendeley
-
-│ ├── processed/ # Extracted images (5 class folders)
-│ │ ├── Dry_Leaf/
-│ │ ├── Healthy_Leaf/
-│ │ ├── Leaf_Blotch/
-│ │ ├── Rhizome_Disease_Root/
-│ │ └── Rhizome_Healthy_Root/
-│ └── splits/ # Train/val/test CSV files (auto‑generated)
-
-│
-├── outputs/ # All saved models, plots, and logs
-│ ├── byol_backbone.pth # BYOL pretrained backbone (ViT‑B/16)
-│ ├── dino_backbone.pth # DINO pretrained backbone (Swin‑T)
-│ ├── task1_class_dist.png # Class distribution bar chart
-│ ├── task1_aug_grid.png # Augmentation visualisation (BYOL)
-│ ├── task2_byol_curves.png # BYOL training curves (loss, τ, LR)
-│ ├── task3_attention_maps.png # DINO attention heatmaps
-│ ├── task3_training_curves.png # DINO training curves
-│ ├── task4_eval.png # Linear probe results (confusion matrix, F1)
-│ ├── task4_knn_tsne.png # k‑NN accuracy + t‑SNE plots
-│ ├── task4c_comparison_chart.png # SSL vs supervised comparison bar chart
-│ ├── task5_ablation_tau.png # EMA momentum ablation results
-│ └── ... # Additional figures
-│
-├── config.py # (Optional) Centralised hyperparameters
-├── requirements.txt # Python dependencies
-└── README.md # This file
-
-
 
 > 💡 **Note**: The `data/` and `outputs/` directories are created automatically when you run the notebooks. All paths are defined at the top of each notebook and can be customised.
 
 ---
+
+## 🚀 Getting Started
+
+### 1. Clone the repository
+```bash
+git clone https://github.com/MuhammadAfridi/TurmericPlant.git
+cd TurmericPlant
+
+---
+## Setup
+python -m venv venv
+source venv/bin/activate   # or `venv\Scripts\activate` on Windows
+pip install -r requirements.txt
 
 ## 🛠️ Installation
 
