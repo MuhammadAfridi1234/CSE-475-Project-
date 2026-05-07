@@ -133,11 +133,13 @@ Cross‑entropy between student’s sharpened probabilities and teacher’s cent
 TurmericPlant/
 │
 ├── notebooks/ # Main Jupyter notebooks
+
 │ ├── BYOL_ViT_B_16.ipynb # BYOL with pretrained ViT‑B/16
 │ └── DINO_Swin_T.ipynb # DINO with Swin‑T (trained from scratch)
 │
 ├── data/ # Dataset directory (created automatically)
 │ ├── raw/ # Original downloaded ZIP from Mendeley
+
 │ ├── processed/ # Extracted images (5 class folders)
 │ │ ├── Dry_Leaf/
 │ │ ├── Healthy_Leaf/
@@ -145,6 +147,7 @@ TurmericPlant/
 │ │ ├── Rhizome_Disease_Root/
 │ │ └── Rhizome_Healthy_Root/
 │ └── splits/ # Train/val/test CSV files (auto‑generated)
+
 │
 ├── outputs/ # All saved models, plots, and logs
 │ ├── byol_backbone.pth # BYOL pretrained backbone (ViT‑B/16)
@@ -164,7 +167,7 @@ TurmericPlant/
 ├── requirements.txt # Python dependencies
 └── README.md # This file
 
-text
+
 
 > 💡 **Note**: The `data/` and `outputs/` directories are created automatically when you run the notebooks. All paths are defined at the top of each notebook and can be customised.
 
